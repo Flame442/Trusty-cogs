@@ -87,7 +87,7 @@ class DestinyAPI:
                             log.error(data["message"])
                         else:
                             log.error("Incorrect response data")
-                        raise Destiny2InvalidParameters(data["Message"])
+                        raise Destiny2InvalidParameters(data)
                 else:
                     log.error("Could not connect to the API")
                     raise Destiny2APIError
